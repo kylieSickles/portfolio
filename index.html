@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="utf-8">
+
+     <!--Site metadata and SEO-->
+     <title>Kylie Sickles</title>
+     <meta name="description" content="Kylie Sickles, Web Designer and Developer Portfolio">
+
+     <!--Responsive design call-->
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <!--Stylesheets-->
+     <link rel="stylesheet" type="text/css" href="css/reset.css">
+     <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+     <!--Favicon-->
+     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+</head>
+
+<body>
+
+     <!--Header and Navigation-->
+     <header>
+          <a href="index.html#top" onclick="closeMobileNav()">
+               <h1>Kylie Sickles</h1>
+          </a>
+     </header>
+
+     <nav id="nav">
+          <a href="index.html#about" onclick="closeMobileNav()">About</a>
+          <a href="index.html#projects" onclick="closeMobileNav()">Projects</a>
+          <a href="index.html#contact" onclick="closeMobileNav()">Contact</a>
+     </nav>
+
+     <!--Mobile menu-->
+     <input type="checkbox" id="active" class="mobile-nav-input" aria-hidden="true">
+     <div class="menu cross menu--1" aria-hidden="true">
+          <label>
+               <input id="checkbox" type="checkbox" onclick="toggleMobileNav()" class="mobile-nav-input">
+               <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="30" />
+                    <path class="line--1" d="M0 40h62c13 0 6 28-4 18L35 35" />
+                    <path class="line--2" d="M0 50h70" />
+                    <path class="line--3" d="M0 60h62c13 0 6-28-4-18L35 65" />
+               </svg>
+          </label>
+     </div>
+
+     <!--Main-->
+     <main>
+
+          <!--Hero Section-->
+          <section id="top" class="full-height hero">
+               <article class="col-50 center-text">
+                    <h2>Kylie Sickles</h2>
+                    <h3>Creating Websites That Bloom</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <a href="#"><button class="primary-btn">Button</button></a> <a href="#"><button class="primary-btn">Button</button></a>
+               </article>
+               <section class="col-40">
+                    <div class="card">
+                         <div class="base-image">
+                              <div class="back-flowers-image">
+                                   <div class="computer-image">
+                                        <div class="middle-flowers-image">
+                                             <div class="front-flowers-image"></div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </section>
+          </section>
+
+
+
+          <!--About-->
+          <section id="about">
+               <h2 class="col-80 margin-auto">Bringing Life to the Internet</h2>
+               <article class="col-40 col-left">
+                    <p>Websites begin with planning, structure, and accessibility, but let's make it beautiful, too. </p>
+
+                    <p>And, just like a garden, sometimes bugs become features.</p>
+
+                    <a href="#" target="_blank"><button class="primary-btn">Button</button></a>
+               </article>
+
+               <article class="col-30 col-right">
+                    <h4>Another Heading</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                         labore et dolore magna aliqua. Ac auctor augue mauris augue neque gravida in fermentum et.</p>
+
+                    <h4>Another Heading</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                         labore et dolore magna aliqua. Ac auctor augue mauris augue neque gravida in fermentum et.</p>
+
+                    <h4>Another Heading</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                         labore et dolore magna aliqua. Ac auctor augue mauris augue neque gravida in fermentum et.</p>
+               </article>
+          </section>
+
+          <section id="projects">
+               
+               <article  class="project-slide" >
+                    <div class="cream-slide" id="cream-slide-1"></div>
+                    <div id="koug-title" class="project-title">
+                         <h3>KOUG Radio Website</h3>
+                         <p>A WordPress site built from the ground up.</p>
+                         <button class="primary-btn" onclick="toggleProjectList('koug')">Learn More</button>
+                    </div>
+                    <div id="koug" class="project-content">
+                         <h2>hi hello</h2>
+                         <p>shdiagbfhdejysbgfjchb</p>
+                    </div>
+               </article>
+
+               
+               <article class="project-slide" >
+                    <div class="cream-slide" id="cream-slide-2"></div>
+                    <div id="scj-title" class="project-title">
+                         <h3>KOUG Radio Website</h3>
+                         <p>A WordPress site built from the ground up.</p>
+                         <button class="primary-btn" onclick="toggleProjectList('scj')">Learn More</button>
+                    </div>
+                    <div id="scj" class="project-content">
+                         <h2>hi hello</h2>
+                         <p>shdiagbfhdejysbgfjchb</p>
+                    </div>
+               </article>
+
+               
+               <article  class="project-slide" >
+                    <div class="cream-slide" id="cream-slide-3"></div>
+                    <div id="survivin-title" class="project-title">
+                         <h3>KOUG Radio Website</h3>
+                         <p>A WordPress site built from the ground up.</p>
+                         <button class="primary-btn" onclick="toggleProjectList('survivin')">Learn More</button>
+                    </div>
+                    <div id="survivin" class="project-content">
+                         <h2>hi hello</h2>
+                         <p>shdiagbfhdejysbgfjchb</p>
+                    </div>
+               </article>
+
+               
+               <article  class="project-slide" >
+                    <div class="cream-slide" id="cream-slide-4"></div>
+                    <div id="tester4-title" class="project-title">
+                         <h3>KOUG Radio Website</h3>
+                         <p>A WordPress site built from the ground up.</p>
+                         <button class="primary-btn" onclick="toggleProjectList('tester4')">Learn More</button>
+                    </div>
+                    <div id="tester4" class="project-content">
+                         <h2>hi hello</h2>
+                         <p>shdiagbfhdejysbgfjchb</p>
+                    </div>
+               </article>
+
+               
+               <article  class="project-slide" >
+                    <div class="cream-slide" id="cream-slide-5"></div>
+                    <div id="tester5-title" class="project-title">
+                         <h3>KOUG Radio Website</h3>
+                         <p>A WordPress site built from the ground up.</p>
+                         <button class="primary-btn" onclick="toggleProjectList('tester5')">Learn More</button>
+                    </div>
+                    <div id="tester5" class="project-content">
+                         <h2>hi hello</h2>
+                         <p>shdiagbfhdejysbgfjchb</p>
+                    </div>
+               </article>
+          </section>
+
+          <!--Contact-->
+          <section id="contact">
+               <h2 class="col-80 margin-auto">Let's Be Buds.</h2>
+               <article class="col-40 col-left">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                         laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                         voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <p>Urna et pharetra pharetra massa massa ultricies. Gravida dictum fusce ut placerat orci nulla
+                         pellentesque dignissim. Amet aliquam id diam maecenas. Eget duis at tellus at urna.</p>
+
+                    <a href="#" target="_blank"><button class="primary-btn">Button</button></a>
+               </article>
+
+               <article class="col-30 col-right">
+                    <img src="img/kylie-sickles-portrait.png">
+               </article>
+          </section>
+
+
+
+     </main>
+
+
+     <!--Footer-->
+     <footer>
+          <a href="#" target="_blank" class="linkedin-btn"></a>
+          <a href="#" target="_blank" class="twitter-btn"></a>
+
+          <p id="copyright">Copyright Kylie Sickles 2024</p>
+     </footer>
+
+
+     <!--Scripts-->
+     <script src="js/main.js"></script>
+
+     <!--jQuery Library-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+     <script type="text/javascript">
+          // https://www.jqueryscript.net/animation/3d-multi-layer-tilt-hover-effect.html
+          var card = $(".card");
+          $(document).on("mousemove",function(e) {  
+            var ax = -($(window).innerWidth()/2- e.pageX)/120;
+            var ay = ($(window).innerHeight()/2- e.pageY)/60;
+            card.attr("style", "transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-webkit-transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-moz-transform: rotateY("+ax+"deg) rotateX("+ay+"deg)");
+});</script>
+
+     <script type="text/javascript">
+          // https://coolcssanimation.com/how-to-trigger-a-css-animation-on-scroll/
+          const observer = new IntersectionObserver(entries => {
+            // Loop over the entries
+            entries.forEach(entry => {
+              // If the element is visible
+              if (entry.isIntersecting) {
+                // Add the animation class
+                entry.target.classList.add('start-slide');
+              }
+              if (!entry.isIntersecting){
+               entry.target.classList.remove('start-slide');
+              }
+            });
+          });
+
+          // observer.observe(document.querySelector('.cream-slide'));
+
+          const creamslides = document.querySelectorAll('.cream-slide');
+          creamslides.forEach((element) => observer.observe(element));
+     </script>
+
+
+</body>
+
+</html>
