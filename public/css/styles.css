@@ -107,16 +107,17 @@ li{
     text-align: left;
 }
 
-#about li{
+li{
     list-style-image: url(../img/flower-svgrepo-com.svg);
     list-style-position: inside;
     line-height: 1.5em;
 
 }
 
-#about li::marker{
+li::marker{
     font-size: 2rem;
 }
+
 
 
 
@@ -162,6 +163,21 @@ li{
     
 }
 
+.project-info{
+    padding: 5vh 0;
+}
+
+.project-img{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-img img{
+    max-height: 30vh;
+    width: auto;
+    padding: 5vh 0;
+}
 
 
 
@@ -466,7 +482,7 @@ nav {
     z-index: 997;
     height: 100vh;
     width: 100vw;
-    background-color: #F1F3F5;
+    background-color: rgba(234, 81, 95, .75);
     transition: right 1s;
     font-size: 2em;
     opacity: 1;
@@ -669,7 +685,7 @@ footer {
     align-items: center;
     padding: 30px;
     margin-top: 100px;
-    background-color: #191A1E;
+    background-color: rgb(21,162,162);
     color: #fff;
 }
 
@@ -680,16 +696,17 @@ footer {
     z-index: 20;
     background: url("../img/ico-linkedin-light.svg") no-repeat;
     transition: all .25s ease-in-out;
-    margin-right: 30px;
+    
 }
 
-.twitter-btn {
+.email-btn {
     position: relative;
-    width: 35px !important;
-    height: 35px;
+    width: 45px !important;
+    height: 45px;
     z-index: 20;
-    background: url("../img/ico-twitter-light.svg") no-repeat;
+    background: url("../img/email.svg") no-repeat;
     transition: all .25s ease-in-out;
+    margin-right: 30px;
 }
 
 #copyright {
