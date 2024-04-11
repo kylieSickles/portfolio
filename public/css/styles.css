@@ -99,12 +99,31 @@ a:hover span {
     }
 }
 
+ul{
+    text-align: left;
+}
+
+li{
+    text-align: left;
+}
+
+#about li{
+    list-style-image: url(../img/flower-svgrepo-com.svg);
+    list-style-position: inside;
+    line-height: 1.5em;
+
+}
+
+#about li::marker{
+    font-size: 2rem;
+}
+
 
 
 
 /* Buttons */
 .primary-btn {
-    background-color: #191A1E;
+    background-color: rgb(234,81,95);
     color: #fff;
     border: none;
     padding: 15px 35px;
@@ -113,13 +132,34 @@ a:hover span {
     cursor: pointer;
     font-family: Helvetica;
     border-radius: 10px;
-    border: 2px solid #191A1E;
+    border: 2px solid rgb(234,81,95);
     transition: all .3s;
 }
 
 .primary-btn:hover {
     background-color: transparent;
-    color: #191A1E;
+    color: rgb(234,81,95);
+}
+
+.project-btn {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 15px 35px;
+    font-size: .9em;
+    margin: 15px 0;
+    cursor: pointer;
+    font-family: Helvetica;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    transition: all .3s;
+}
+
+.project-btn:hover {
+    background-color: rgba(255, 255, 255, .3);
+    
+    color: #fff;
+    
 }
 
 
@@ -129,10 +169,10 @@ a:hover span {
 section {
     box-sizing: border-box;
     position: relative;
-    padding: 75px 0;
+    padding: 40px 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     overflow: hidden;
@@ -149,7 +189,11 @@ section {
 }
 
 .hero button {
-    margin: 15px 25px;
+    margin: 15px 0px;
+}
+
+.hero p{
+    max-width: 60ch;
 }
 
 .project-slide{
@@ -166,7 +210,13 @@ section {
 .project-title{
     width: 100vw;
     height: fit-content;
+    color: #fff;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
 
+.project-title h3{
+    color: #fff;
 }
 
 #koug-title{
@@ -191,6 +241,7 @@ section {
 
 .project-content{
     display: none;
+   
 }
 
 
@@ -288,10 +339,13 @@ section {
     }
 }
 
+section.full-height{
+    padding-top: 15vh;
+}
+
 @media screen and (min-width: 1025px) {
     section.full-height {
         min-height: 100vh;
-        padding: 100px 0;
     }
 }
 
@@ -361,7 +415,7 @@ header {
 
 .cross input:checked+svg .line--1,
 .cross input:checked+svg .line--3 {
-    --length: 22.627416998;
+    --length: 28.627416998;
 }
 
 .cross input:checked+svg .line--2 {
@@ -649,11 +703,12 @@ footer {
       margin:  40px auto;
       transform-style: preserve-3d;
       transform: translateZ(50px);
+      padding-top: 5vh;
     }
 
 .card{
   width: 70vw;
-  height: 70vw;
+  height: 52vw;
   padding:10px;
   text-align: justify;
   background-color:white;
@@ -663,7 +718,7 @@ footer {
 
 .base-image{
   width: 70vw;
-  height: 70vw;
+  height: 52vw;
   position: absolute;
   bottom: 50;
   right: 50;
@@ -674,7 +729,7 @@ footer {
 
 .back-flowers-image{
   width: 70vw;
-  height: 70vw;
+  height: 52vw;
   position: absolute;
   bottom: 50;
   right: 50;
@@ -685,7 +740,7 @@ footer {
 
 .computer-image{
   width: 70vw;
-  height: 70vw;
+  height: 52vw;
   position: absolute;
   bottom: 50;
   right: 50;
@@ -696,7 +751,7 @@ footer {
 
 .middle-flowers-image{
   width: 70vw;
-  height: 70vw;
+  height: 52vw;
   position: absolute;
   bottom: 50;
   right: 50;
@@ -707,7 +762,7 @@ footer {
 
 .front-flowers-image{
   width: 70vw;
-  height: 70vw;
+  height: 52vw;
   position: absolute;
   bottom: 50;
   right: 50;
@@ -728,8 +783,8 @@ footer {
     }
 
     .card{
-      width: 30vw;
-      height: 30vw;
+      width: 40vw;
+      height: 28vw;
       padding:10px;
       text-align: justify;
       transform-style: preserve-3d;
@@ -744,8 +799,8 @@ footer {
     }
 
     .base-image{
-      width: 30vw;
-      height: 30vw;
+      width: 40vw;
+      height: 28vw;
       transform-style: preserve-3d;
       transform:translateZ(50px);
       -webkit-transform:translateZ(50px);
@@ -761,8 +816,8 @@ footer {
     }
 
     .back-flowers-image{
-      width: 30vw;
-      height: 30vw;
+      width: 40vw;
+      height: 28vw;
       transform-style: preserve-3d;
       transform:translateZ(50px);
       -webkit-transform:translateZ(50px);
@@ -778,8 +833,8 @@ footer {
     }
 
     .computer-image{
-      width: 30vw;
-      height: 30vw;
+      width: 40vw;
+      height: 28vw;
       transform-style: preserve-3d;
       transform:translateZ(50px);
       -webkit-transform:translateZ(50px);
@@ -795,8 +850,8 @@ footer {
     }
 
     .middle-flowers-image{
-      width: 30vw;
-      height: 30vw;
+      width: 40vw;
+      height: 28vw;
       transform-style: preserve-3d;
       transform:translateZ(50px);
       -webkit-transform:translateZ(50px);
@@ -812,8 +867,8 @@ footer {
     }
 
     .front-flowers-image{
-      width: 30vw;
-      height: 30vw;
+      width: 40vw;
+      height: 28vw;
       transform-style: preserve-3d;
       transform:translateZ(50px);
       -webkit-transform:translateZ(50px);
@@ -837,7 +892,7 @@ footer {
 }
 
 .cream-slide {
-  height: 20vh;
+  height: 14em;
   background-color: white;
   position: absolute;
   left: 0;
@@ -877,5 +932,11 @@ footer {
 }
 
 .expand-project{
-    display: block !important;
+    
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    flex-wrap: wrap;
+    overflow: hidden;
 }
