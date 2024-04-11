@@ -909,7 +909,7 @@ footer {
 }
 
 .cream-slide {
-  height: 14em;
+  min-height: 14em;
   background-color: white;
   position: absolute;
   left: 0;

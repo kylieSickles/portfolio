@@ -81,7 +81,7 @@ window.onscroll = function() {
   } else {
     document.getElementsByTagName("header")[0].classList.remove(className);
   }
-};
+}
 
 
 
@@ -135,9 +135,13 @@ window.onscroll = function() {
 //   });
 // });
 
-var projectHeight = document.getElementById("koug-title").style.height;
+var projectHeight = document.getElementById("koug-title").offsetHeight;
 console.log(projectHeight);
 console.log("haiiiii");
-document.querySelector('.cream-slide').style.height = projectHeight;
+let creamSlidesArray = document.querySelectorAll('.cream-slide');
+for (var i = creamSlidesArray.length - 1; i >= 0; i--) {
+     creamSlidesArray[i].style.height = projectHeight + 'px';
+}
+console.log(document.querySelector('.cream-slide').offsetHeight);
 
 
