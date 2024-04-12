@@ -260,14 +260,13 @@ section {
    
 }
 
-
-
 #projects{
     position: relative;
     height: fit-content;
     display: flex;
     flex-direction: column;
     gap: 0px;
+    
 }
 
 #project {

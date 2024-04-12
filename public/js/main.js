@@ -16,52 +16,92 @@ function toggleProjectList(projectTitle) {
   case "koug":
     document.getElementById("koug").classList.toggle("expand-project");
     document.getElementById("cream-slide-1").classList.toggle("expand-project");
-    var projectList = ["scj", "survivin", "tester4", "tester5"];
-  console.log(projectList);
-  for (var i = projectList.length - 1; i >= 0; i--) {
-    document.getElementById(projectList[i]).classList.remove("expand-project");
-    console.log(projectList[i]);
-  }
+
+    var expandedArray = document.querySelectorAll('.expand-project');
+    console.log(expandedArray);
+    for (var i = expandedArray.length - 1; i >= 0; i--) {
+      if(expandedArray[i] != document.getElementById("koug") && expandedArray[i] != document.getElementById("cream-slide-1")){
+      expandedArray[i].classList.toggle("expand-project");
+      }
+
+      else{
+        // document.getElementById("koug-button").innerHTML = "Minimize"
+      }
+    }
+
+
+
+
+
+
+
+
+  //   var projectList = ["scj", "survivin", "tester4", "tester5"];
+ 
+  // for (var i = projectList.length - 1; i >= 0; i--) {
+  //   if( document.getElementById(projectList[i]).classList.contains("expand-project")){
+  //     document.getElementById(projectList[i]).classList.remove("expand-project");
+  //   console.log(projectList[i]);
+  //   }
+    
+  // }
     break;
   case "scj":
     document.getElementById("scj").classList.toggle("expand-project");
     document.getElementById("cream-slide-2").classList.toggle("expand-project");
-    var projectList = ["koug", "survivin", "tester4", "tester5"];
-  console.log(projectList);
-  for (var i = projectList.length - 1; i >= 0; i--) {
-    document.getElementById(projectList[i]).classList.remove("expand-project");
-    console.log(projectList[i]);
-  }
+
+    var expandedArray = document.querySelectorAll('.expand-project');
+    console.log(expandedArray);
+    for (var i = expandedArray.length - 1; i >= 0; i--) {
+      if(expandedArray[i] != document.getElementById("scj") && expandedArray[i] != document.getElementById("cream-slide-2")){
+      expandedArray[i].classList.toggle("expand-project");
+      }
+
+      else{
+        // document.getElementById("koug-button").innerHTML = "Minimize"
+      }
+    }
+
+
+  //   var projectList = ["koug", "survivin", "tester4", "tester5"];
+  // console.log(projectList);
+  // for (var i = projectList.length - 1; i >= 0; i--) {
+  //   document.getElementById(projectList[i]).classList.remove("expand-project");
+  //   console.log(projectList[i]);
+  // }
     break;
   case "survivin":
     document.getElementById("survivin").classList.toggle("expand-project");
     document.getElementById("cream-slide-3").classList.toggle("expand-project");
-    var projectList = ["koug", "scj", "tester4", "tester5"];
-  console.log(projectList);
-  for (var i = projectList.length - 1; i >= 0; i--) {
-    document.getElementById(projectList[i]).classList.remove("expand-project");
-    console.log(projectList[i]);
-  }
+
+    var expandedArray = document.querySelectorAll('.expand-project');
+    console.log(expandedArray);
+    for (var i = expandedArray.length - 1; i >= 0; i--) {
+      if(expandedArray[i] != document.getElementById("survivin") && expandedArray[i] != document.getElementById("cream-slide-3")){
+      expandedArray[i].classList.toggle("expand-project");
+      }
+
+      else{
+        // document.getElementById("koug-button").innerHTML = "Minimize"
+      }
+    }
     break;
   case "tester4":
-    document.getElementById("tester4").classList.toggle("expand-project");
+   document.getElementById("tester4").classList.toggle("expand-project");
     document.getElementById("cream-slide-4").classList.toggle("expand-project");
-    var projectList = ["koug", "scj", "survivin",  "tester5"];
-  console.log(projectList);
-  for (var i = projectList.length - 1; i >= 0; i--) {
-    document.getElementById(projectList[i]).classList.remove("expand-project");
-    console.log(projectList[i]);
-  }
+
+    var expandedArray = document.querySelectorAll('.expand-project');
+    console.log(expandedArray);
+    for (var i = expandedArray.length - 1; i >= 0; i--) {
+      if(expandedArray[i] != document.getElementById("tester4") && expandedArray[i] != document.getElementById("cream-slide-4")){
+      expandedArray[i].classList.toggle("expand-project");
+      }
+
+      else{
+        // document.getElementById("koug-button").innerHTML = "Minimize"
+      }
+    }
     break;
-  case "tester5":
-    document.getElementById("tester5").classList.toggle("expand-project");
-    document.getElementById("cream-slide-5").classList.toggle("expand-project");
-    var projectList = ["koug", "scj", "survivin", "tester4"];
-  console.log(projectList);
-  for (var i = projectList.length - 1; i >= 0; i--) {
-    document.getElementById(projectList[i]).classList.remove("expand-project");
-    console.log(projectList[i]);
-  }
   }
   
   
@@ -84,57 +124,6 @@ window.onscroll = function() {
 }
 
 
-
-// // Image Slider
-// // Select all slides
-// const slides = document.querySelectorAll(".slide");
-
-// // loop through slides and set each slides translateX
-// slides.forEach((slide, indx) => {
-//   slide.style.transform = `translateX(${indx * 100}%)`;
-// });
-
-// // select next slide button
-// const nextSlide = document.querySelector(".btn-next");
-
-// // current slide counter
-// let curSlide = 0;
-// // maximum number of slides
-// let maxSlide = slides.length - 1;
-
-// // add event listener and navigation functionality
-// nextSlide.addEventListener("click", function () {
-//   // check if current slide is the last and reset current slide
-//   if (curSlide === maxSlide) {
-//     curSlide = 0;
-//   } else {
-//     curSlide++;
-//   }
-
-//   //   move slide by -100%
-//   slides.forEach((slide, indx) => {
-//     slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
-//   });
-// });
-
-// // select next slide button
-// const prevSlide = document.querySelector(".btn-prev");
-
-// // add event listener and navigation functionality
-// prevSlide.addEventListener("click", function () {
-//   // check if current slide is the first and reset current slide to last
-//   if (curSlide === 0) {
-//     curSlide = maxSlide;
-//   } else {
-//     curSlide--;
-//   }
-
-//   //   move slide by 100%
-//   slides.forEach((slide, indx) => {
-//     slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
-//   });
-// });
-
 var projectHeight = document.getElementById("koug-title").offsetHeight;
 console.log(projectHeight);
 console.log("haiiiii");
@@ -144,4 +133,24 @@ for (var i = creamSlidesArray.length - 1; i >= 0; i--) {
 }
 console.log(document.querySelector('.cream-slide').offsetHeight);
 
+
+
+
+// https://coolcssanimation.com/how-to-trigger-a-css-animation-on-scroll/
+const observer = new IntersectionObserver(entries => {
+  // Loop over the entries
+  entries.forEach(entry => {
+    // If the element is visible
+    if (entry.isIntersecting) {
+      // Add the animation class
+      entry.target.classList.add('start-slide');
+    }
+    if (!entry.isIntersecting){
+     entry.target.classList.remove('start-slide');
+    }
+  });
+});
+
+const creamslides = document.querySelectorAll('.cream-slide');
+creamslides.forEach((element) => observer.observe(element));
 

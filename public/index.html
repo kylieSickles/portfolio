@@ -87,6 +87,8 @@
 
                     <p>Just like a bouquet of flowers, websites are best when they incorporate different perspectives that work together to make something amazing. Just like a garden, sometimes bugs become features.</p>
 
+                    <a href="img/sickles-resume.pdf" target="_blank"><button class="primary-btn" >View My Resume</button></a>
+
                </article>
 
                <article class="col-30 col-right">
@@ -120,7 +122,7 @@
                     <div id="koug-title" class="project-title">
                          <h3>"WSU Vancouver Is..." Marketing Campaign Site</h3>
                          <p>A recruitment and development campaign website for Washington State University Vancouver.</p>
-                         <button class="project-btn" onclick="toggleProjectList('koug')">Learn More</button>
+                         <a><button class="project-btn" onclick="toggleProjectList('koug')" id="koug-button">Learn More</button></a>
                     </div>
                     <div id="koug" class="project-content">
                          <article class="col-40 col-left project-info">
@@ -261,30 +263,8 @@
             var ax = -($(window).innerWidth()/2- e.pageX)/120;
             var ay = ($(window).innerHeight()/2- e.pageY)/60;
             card.attr("style", "transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-webkit-transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-moz-transform: rotateY("+ax+"deg) rotateX("+ay+"deg)");
-});</script>
-
-     <script type="text/javascript">
-          // https://coolcssanimation.com/how-to-trigger-a-css-animation-on-scroll/
-          const observer = new IntersectionObserver(entries => {
-            // Loop over the entries
-            entries.forEach(entry => {
-              // If the element is visible
-              if (entry.isIntersecting) {
-                // Add the animation class
-                entry.target.classList.add('start-slide');
-              }
-              if (!entry.isIntersecting){
-               entry.target.classList.remove('start-slide');
-              }
-            });
           });
-
-          // observer.observe(document.querySelector('.cream-slide'));
-
-          const creamslides = document.querySelectorAll('.cream-slide');
-          creamslides.forEach((element) => observer.observe(element));
      </script>
-
 
 </body>
 
