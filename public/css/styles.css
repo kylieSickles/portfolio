@@ -255,6 +255,14 @@ section {
     background-color: rgb(234,81,95);
 }
 
+#poster-title{
+    background-color: rgb(234,81,95);
+}
+
+#ad-title{
+    background-color: rgb(254,116,52);
+}
+
 .project-content{
     display: none;
    
@@ -936,6 +944,10 @@ footer {
 
 
 #cream-slide-5{
+ 
+}
+
+#cream-slide-6{
  
 }
 

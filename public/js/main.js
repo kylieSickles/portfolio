@@ -102,6 +102,40 @@ function toggleProjectList(projectTitle) {
       }
     }
     break;
+
+    case "poster":
+   document.getElementById("poster").classList.toggle("expand-project");
+    document.getElementById("cream-slide-5").classList.toggle("expand-project");
+
+    var expandedArray = document.querySelectorAll('.expand-project');
+    console.log(expandedArray);
+    for (var i = expandedArray.length - 1; i >= 0; i--) {
+      if(expandedArray[i] != document.getElementById("poster") && expandedArray[i] != document.getElementById("cream-slide-5")){
+      expandedArray[i].classList.toggle("expand-project");
+      }
+
+      else{
+        // document.getElementById("koug-button").innerHTML = "Minimize"
+      }
+    }
+    break;
+
+    case "ad":
+   document.getElementById("ad").classList.toggle("expand-project");
+    document.getElementById("cream-slide-6").classList.toggle("expand-project");
+
+    var expandedArray = document.querySelectorAll('.expand-project');
+    console.log(expandedArray);
+    for (var i = expandedArray.length - 1; i >= 0; i--) {
+      if(expandedArray[i] != document.getElementById("ad") && expandedArray[i] != document.getElementById("cream-slide-6")){
+      expandedArray[i].classList.toggle("expand-project");
+      }
+
+      else{
+        // document.getElementById("koug-button").innerHTML = "Minimize"
+      }
+    }
+    break;
   }
   
   
