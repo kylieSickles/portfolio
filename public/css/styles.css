@@ -235,15 +235,15 @@ section {
     color: #fff;
 }
 
-#koug-title{
+#tester1-title{
     background-color: rgb(234,81,95);
 }
 
-#scj-title{
+#tester2-title{
     background-color: rgb(254,116,52);
 }
 
-#survivin-title{
+#tester3-title{
     background-color: rgb(254,168,2);
 }
 
@@ -256,11 +256,11 @@ section {
 }
 
 #poster-title{
-    background-color: rgb(234,81,95);
+    background-color: rgb(254,116,52);
 }
 
 #ad-title{
-    background-color: rgb(254,116,52);
+    background-color: rgb(254,168,2);
 }
 
 .project-content{

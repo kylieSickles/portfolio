@@ -13,19 +13,19 @@ function toggleProjectList(projectTitle) {
   
 
   switch (projectTitle){
-  case "koug":
-    document.getElementById("koug").classList.toggle("expand-project");
+  case "tester1":
+    document.getElementById("tester1").classList.toggle("expand-project");
     document.getElementById("cream-slide-1").classList.toggle("expand-project");
 
     var expandedArray = document.querySelectorAll('.expand-project');
     console.log(expandedArray);
     for (var i = expandedArray.length - 1; i >= 0; i--) {
-      if(expandedArray[i] != document.getElementById("koug") && expandedArray[i] != document.getElementById("cream-slide-1")){
+      if(expandedArray[i] != document.getElementById("tester1") && expandedArray[i] != document.getElementById("cream-slide-1")){
       expandedArray[i].classList.toggle("expand-project");
       }
 
       else{
-        // document.getElementById("koug-button").innerHTML = "Minimize"
+        // document.getElementById("tester1-button").innerHTML = "Minimize"
       }
     }
 
@@ -36,7 +36,7 @@ function toggleProjectList(projectTitle) {
 
 
 
-  //   var projectList = ["scj", "survivin", "tester4", "tester5"];
+  //   var projectList = ["tester2", "tester3", "tester4", "tester5"];
  
   // for (var i = projectList.length - 1; i >= 0; i--) {
   //   if( document.getElementById(projectList[i]).classList.contains("expand-project")){
@@ -46,43 +46,43 @@ function toggleProjectList(projectTitle) {
     
   // }
     break;
-  case "scj":
-    document.getElementById("scj").classList.toggle("expand-project");
+  case "tester2":
+    document.getElementById("tester2").classList.toggle("expand-project");
     document.getElementById("cream-slide-2").classList.toggle("expand-project");
 
     var expandedArray = document.querySelectorAll('.expand-project');
     console.log(expandedArray);
     for (var i = expandedArray.length - 1; i >= 0; i--) {
-      if(expandedArray[i] != document.getElementById("scj") && expandedArray[i] != document.getElementById("cream-slide-2")){
+      if(expandedArray[i] != document.getElementById("tester2") && expandedArray[i] != document.getElementById("cream-slide-2")){
       expandedArray[i].classList.toggle("expand-project");
       }
 
       else{
-        // document.getElementById("koug-button").innerHTML = "Minimize"
+        // document.getElementById("tester1-button").innerHTML = "Minimize"
       }
     }
 
 
-  //   var projectList = ["koug", "survivin", "tester4", "tester5"];
+  //   var projectList = ["tester1", "tester3", "tester4", "tester5"];
   // console.log(projectList);
   // for (var i = projectList.length - 1; i >= 0; i--) {
   //   document.getElementById(projectList[i]).classList.remove("expand-project");
   //   console.log(projectList[i]);
   // }
     break;
-  case "survivin":
-    document.getElementById("survivin").classList.toggle("expand-project");
+  case "tester3":
+    document.getElementById("tester3").classList.toggle("expand-project");
     document.getElementById("cream-slide-3").classList.toggle("expand-project");
 
     var expandedArray = document.querySelectorAll('.expand-project');
     console.log(expandedArray);
     for (var i = expandedArray.length - 1; i >= 0; i--) {
-      if(expandedArray[i] != document.getElementById("survivin") && expandedArray[i] != document.getElementById("cream-slide-3")){
+      if(expandedArray[i] != document.getElementById("tester3") && expandedArray[i] != document.getElementById("cream-slide-3")){
       expandedArray[i].classList.toggle("expand-project");
       }
 
       else{
-        // document.getElementById("koug-button").innerHTML = "Minimize"
+        // document.getElementById("tester1-button").innerHTML = "Minimize"
       }
     }
     break;
@@ -98,7 +98,7 @@ function toggleProjectList(projectTitle) {
       }
 
       else{
-        // document.getElementById("koug-button").innerHTML = "Minimize"
+        // document.getElementById("tester1-button").innerHTML = "Minimize"
       }
     }
     break;
@@ -115,7 +115,7 @@ function toggleProjectList(projectTitle) {
       }
 
       else{
-        // document.getElementById("koug-button").innerHTML = "Minimize"
+        // document.getElementById("tester1-button").innerHTML = "Minimize"
       }
     }
     break;
@@ -132,7 +132,7 @@ function toggleProjectList(projectTitle) {
       }
 
       else{
-        // document.getElementById("koug-button").innerHTML = "Minimize"
+        // document.getElementById("tester1-button").innerHTML = "Minimize"
       }
     }
     break;
@@ -149,7 +149,7 @@ function toggleProjectList(projectTitle) {
       }
 
       else{
-        // document.getElementById("koug-button").innerHTML = "Minimize"
+        // document.getElementById("tester1-button").innerHTML = "Minimize"
       }
     }
     break;
@@ -175,7 +175,7 @@ window.onscroll = function() {
 }
 
 
-var projectHeight = document.getElementById("koug-title").offsetHeight;
+var projectHeight = document.getElementById("tester1-title").offsetHeight;
 console.log(projectHeight);
 console.log("haiiiii");
 let creamSlidesArray = document.querySelectorAll('.cream-slide');
