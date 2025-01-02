@@ -103,6 +103,23 @@ function toggleProjectList(projectTitle) {
     }
     break;
 
+    case "tester5":
+    document.getElementById("tester5").classList.toggle("expand-project");
+    document.getElementById("cream-slide-5").classList.toggle("expand-project");
+
+    var expandedArray = document.querySelectorAll('.expand-project');
+    console.log(expandedArray);
+    for (var i = expandedArray.length - 1; i >= 0; i--) {
+      if(expandedArray[i] != document.getElementById("tester5") && expandedArray[i] != document.getElementById("cream-slide-5")){
+      expandedArray[i].classList.toggle("expand-project");
+      }
+
+      else{
+        // document.getElementById("koug-button").innerHTML = "Minimize"
+      }
+    }
+    break;
+
     case "poster":
    document.getElementById("poster").classList.toggle("expand-project");
     document.getElementById("cream-slide-5").classList.toggle("expand-project");
