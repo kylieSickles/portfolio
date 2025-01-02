@@ -489,7 +489,7 @@ nav {
     z-index: 997;
     height: 100vh;
     width: 100vw;
-    background-color: rgba(234, 81, 95, .75);
+    background-color: rgba(234, 81, 95, .95);
     transition: right 1s;
     font-size: 2em;
     opacity: 1;
