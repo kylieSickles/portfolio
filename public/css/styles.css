@@ -915,12 +915,14 @@ footer {
   to {left: 99vw; width: 1vw;}
 }
 
+/*Cream slide animations currently removed until a more accessible option is designed.*/
+
 .cream-slide {
   min-height: 14em;
   background-color: white;
   position: absolute;
-  left: 0;
-  width: 100vw;
+  right: 0;
+  width: 0vw;
   z-index: 99;
 }
 
